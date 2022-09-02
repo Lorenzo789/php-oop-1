@@ -41,7 +41,17 @@
 <body>
     <main>
         <div>
+            <?php foreach ($movies as $movie) { ?>
+                
+                <h3> 
+                    <?php echo $movie->getName(); ?>
+                </h3>
 
+                <p> <?php echo 'Produced By:'. '  '. $movie->getProduction(); ?> </p>
+
+                <p> <?php echo 'Year:'. '  '. $movie->getYear(); ?> </p>
+
+            <?php } ?>
         </div>
     </main>
 </body>
